@@ -26,9 +26,11 @@
                                     </nav>
                                 </div>          
                                 <!-- Header-btn -->
+                                <?php if (session('loggedIn', true)): ?>
                                 <div class="header-btn d-none f-right d-lg-block">
                                     <!-- <a href="register" class="btn head-btn2">Register</a> -->
-                                    <a href="logout" class="btn head-btn2">Login</a>
+                                    <a href="logout" class="btn head-btn2">Logout</a>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
