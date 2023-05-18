@@ -15,14 +15,14 @@
         </div>
     </div>
     <!-- Preloader Start -->
-        <?= $this->include('layouts2/navbar') ?>
+        <?= $this->include('layouts/navbar') ?>
 
         <main role="main " class="container">
             <?= $this->include('layouts/header') ?>
 
             <?= $this->renderSection('content') ?>
         </main>
-        <?= $this->include('layouts/footer') ?>
+        <?= $this->include('layouts2/footer') ?>
 
         <?= $this->include('layouts/scripts') ?>
     </body>

@@ -29,9 +29,9 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Coba::index');
 $routes->get('aku', 'Aku::index');
-$routes->get('/', 'HelloController::index');
+// $routes->get('/', 'HelloController::index');
 $routes->get('beta','CobaRestfulController::index');
     $routes->resource('job');
 $routes->resource('users');
@@ -40,6 +40,8 @@ $routes->get('/logout', 'Logout::index');
 $routes->resource('register');
 $routes->resource('login');
 $routes->resource('coba');
+$routes->resource('about');
+
 
 /*
  * --------------------------------------------------------------------

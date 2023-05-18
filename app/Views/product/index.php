@@ -3,10 +3,9 @@
 <div class="container mt-5">
     <div class="row mb-4">
         <div class="col-12">
+        <?php if (session('loggedIn', true)): ?>
             <h5 class="mb-4">Hello <?= session('name') ?> </h5><br/>
-
-            <h5 class="mb-4">Daftar Produk</h5>
-
+            <?php endif; ?>
             <table class="table table-hover ">
                 <thead>
                     <tr>

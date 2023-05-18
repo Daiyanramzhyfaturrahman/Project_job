@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-class Coba extends BaseController
+class About extends BaseController
 {
     public function index()
     {
-        return view('product/admin');
+        return view('product/about');
     }
 }

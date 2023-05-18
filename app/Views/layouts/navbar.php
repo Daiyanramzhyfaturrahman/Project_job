@@ -7,7 +7,7 @@
                         <div class="col-lg-3 col-md-2">
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="index.html"><img src="/assets/img/logo/ini logo.jpeg" alt="" width="200"></a>
+                                <a href="coba"><img src="/assets/img/logo/ini logo.jpeg" alt="" width="200"></a>
                             </div>  
                         </div>
                         <div class="col-lg-9 col-md-9">
@@ -16,12 +16,16 @@
                                 <div class="main-menu">
                                     <nav class="d-none d-lg-block">
                                         <ul id="navigation">
-                                            <li><a href="job/edit">Home</a></li>
-                                            <li><a href="job_listing.html">Find a Jobs </a></li>
+                                            <li><a href="coba">Home</a></li>
+                                            <li><a href="job">Find a Jobs </a></li>
                                             <?php if (session('loggedIn', true)): ?>
-                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="job/new">New</a></li>
                                             <?php endif; ?>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <?php if (session('loggedIn', true)): ?>
+                                                <?php else: ?>
+                                            <li><a href="about">About</a></li>
+                                            <?php endif; ?>
+
                                         </ul>
                                     </nav>
                                 </div>          
