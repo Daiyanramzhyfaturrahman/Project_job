@@ -43,7 +43,7 @@
                             </div>
                             <?php else: ?>
                             <div class="btn-group " role="group " aria-label="Basic example ">
-                          <a href="/registration/<?= $item['id'] ?>"class="btn head-btn2">Book Now</a>
+                          <a href="/registration/<?= $item['id'] ?>"class="btn head-btn2">Apply</a>
                         </div>
                             <?php endif; ?>
                         </td>
