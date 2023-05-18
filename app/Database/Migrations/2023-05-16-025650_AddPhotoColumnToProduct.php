@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class AddPhotoColumnToProduct extends Migration
+class AddPhotoColumnToJob extends Migration
 {
     public function up()
     {
@@ -14,11 +14,11 @@ class AddPhotoColumnToProduct extends Migration
             ],
         ];
 
-        $this->forge->addColumn('products', $fields);
+        $this->forge->addColumn('jobs', $fields);
     }
 
     public function down()
     {
-        $this->forge->dropColumn('products', 'photo');
+        $this->forge->dropColumn('jobs', 'photo');
     }
 }

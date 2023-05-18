@@ -18,10 +18,10 @@ class Job extends ResourceController
      */
     public function index()
     {
-        $products = $this->productModel->paginate(3, 'products');
+        $jobs = $this->productModel->paginate(3, 'jobs');
 
         $payload = [
-            "products" => $products,
+            "jobs" => $jobs,
             "pager" => $this->productModel->pager
         ];
 

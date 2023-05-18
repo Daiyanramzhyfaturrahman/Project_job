@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateProductTable extends Migration
+class CreateJobTable extends Migration
 {
     public function up()
     {
@@ -39,11 +39,11 @@ class CreateProductTable extends Migration
         ];
         $this->forge->addKey('id', true);
         $this->forge->addField($fields);
-        $this->forge->createTable('products', true); //If NOT EXISTS create table products
+        $this->forge->createTable('jobs', true); //If NOT EXISTS create table products
     }
 
     public function down()
     {
-        $this->forge->dropTable('products', true); //If Exists drop table products
+        $this->forge->dropTable('jobs', true); //If Exists drop table products
     }
 }

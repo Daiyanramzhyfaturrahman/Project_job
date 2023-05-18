@@ -4,7 +4,7 @@ namespace App\Database\Seeds;
 
 use CodeIgniter\Database\Seeder;
 
-class UserSeeder extends Seeder
+class AdminSeeder extends Seeder
 {
     public function run()
     {
@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
         ];
 
         // Simple Queries
-        $this->db->table('users')->insert($data);
+        $this->db->table('admins')->insert($data);
 
         $data = [
             'name' => 'Test 2',
@@ -24,6 +24,6 @@ class UserSeeder extends Seeder
         ];
 
         // Simple Queries
-        $this->db->table('users')->insert($data);
+        $this->db->table('admins')->insert($data);
     }
 }

@@ -22,7 +22,7 @@
                 </thead>
                 <tbody>
                     <?php $no = 0; ?>
-                    <?php foreach ($products as $item): ?>
+                    <?php foreach ($jobs as $item): ?>
                     <tr>
                         <td><?= $no += 1; ?></td>
                         <td><img src="/photos/<?= $item['photo'] ?>" alt="" width=100 height=100></td>
@@ -53,7 +53,7 @@
             </table>
         </div>
         <div class="col-12">
-            <?= $pager->links('products', 'custom_pagination') ?>
+            <?= $pager->links('jobs', 'custom_pagination') ?>
         </div>
     </div>
 </div>
